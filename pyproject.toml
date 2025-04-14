@@ -1,0 +1,10 @@
+[project]
+name = "onepassword-mcp-server"
+version = "0.1.0"
+description = "An MCP server that enables secure credential retrieval from 1Password to be used by Agentic AI"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp[cli]>=1.6.0",
+    "onepassword-sdk>=0.2.1",
+]

@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "1Password": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--with",
+        "mcp[cli]",
+        "--with",
+        "onepassword-sdk",
+        "mcp",
+        "run",
+        "/your/dir/here/onepassword-mcp-server/server.py"
+      ],
+      "env": {
+        "OP_SERVICE_ACCOUNT_TOKEN": "INSERT_KEY_HERE"
+      }
+    }
+  }
+}
