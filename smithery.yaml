@@ -1,0 +1,19 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - opServiceAccountToken
+    properties:
+      opServiceAccountToken:
+        type: string
+        description: 1Password Service Account Token
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({ command: 'uv', args: ['run', '--with', 'mcp[cli]', '--with', 'onepassword-sdk', 'mcp', 'run', 'server.py'], env: { OP_SERVICE_ACCOUNT_TOKEN: config.opServiceAccountToken } })
+  exampleConfig:
+    opServiceAccountToken: example_service_account_token

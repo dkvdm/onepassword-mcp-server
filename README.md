@@ -2,6 +2,14 @@
 
 ## Quick Start
 
+### Installing via Smithery
+
+To install 1Password Credential Retrieval Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@dkvdm/onepassword-mcp-server):
+
+```bash
+npx -y @smithery/cli install @dkvdm/onepassword-mcp-server --client claude
+```
+
 ### Prerequisites
 
 -   Python 3.11 or higher
