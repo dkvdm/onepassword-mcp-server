@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/dkvdm-onepassword-mcp-server-badge.png)](https://mseep.ai/app/dkvdm-onepassword-mcp-server)
+
 > **Project Note**: ⚠️ This MCP server is a proof of concept and is intended for educational purposes only. It utilizes the [1Password Python SDK](https://github.com/modelcontextprotocol/python-sdk) to securely retrieve credentials from your 1Password account and provides them via the [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk) to Agentic AI for use in its operations. ⚠️
 
 ## Quick Start
